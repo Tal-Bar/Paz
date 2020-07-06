@@ -1,0 +1,356 @@
+
+
+body {
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1500px;
+    margin: 0;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#999999 90%, white);
+    height: 120px;
+}
+
+.row1 {
+    width: 1000px;   
+}
+
+.row11 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.row12 {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+.paz-logo {
+    width: 150px;
+    position: relative;
+    top: 30px;
+    right: 40px;
+}
+
+li.dropdown > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li.dropdown > a::before {
+    content: "|";
+    color: lightgray;
+    padding-left: 11px;
+}
+
+li.dropdown > .home-blue:before {
+    content: "";
+}
+
+li.dropdown > a:hover, footer li a:hover {
+    color: #0a6ebd;
+    text-decoration: underline;
+}
+
+.row11 > a {
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.row11 > a:hover {
+    color: #0a6ebd;
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 10%;
+    box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+    background-color: #999999;
+}
+
+.dropdown-content > a:hover {
+    background-color: #c1c1c1;
+    color: #0a6ebd;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.dropdown-content > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 130px;
+    padding: 5px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.nav ul {
+    margin-bottom: 15px;
+}
+
+.nav ul > a:first-child {
+    margin-left: 30px;
+}
+
+.flex-search {
+    display: flex;
+}
+
+.flex-search  button {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+button > img {
+    position: relative;
+    left: 6px;
+    bottom: 3px;
+}
+
+.main-row {
+    width: 900px;
+    margin: auto;
+}
+.main-row1, .main-row2 {
+    display: flex;
+}
+
+.main-row1 {
+    margin-top: 40px;
+    height: 100px;
+}
+
+.col-1 {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+
+.col-1 button {
+    background-image: linear-gradient(white, lightgrey);
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-top: 1px solid lightgray;
+    margin-top: 23px;
+}
+
+.float {
+    float: right;
+}
+
+.col-1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.col-1 a:hover {
+    text-decoration: underline;
+    color: #0C5176;
+}
+
+.col-2, .col-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+}
+
+.col-3 {
+    margin-right: 150px;
+}
+
+.col-1, .col-2, .col-3 {
+    margin-left: 40px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: small;
+  }
+
+  ul.breadcrumb li:first-child::after {
+      content: ">";
+      color: black;
+      padding: 8px;
+  }
+
+  .breadcrumb {
+      padding: 0;
+  }
+
+  .breadcrumb > .contact {
+      position: relative;
+      left: 15px;
+  }
+ 
+  h4 {
+      color: gray;
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+
+
+  .line, .line2 {
+    border: 1px solid lightgrey;
+    margin-top: 0;
+}
+
+.line {
+    width: 430px;
+}
+
+.line2 {
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.box1 {
+    width: 350px;
+    margin-right: 90px;
+    background-image: linear-gradient(white, lightgrey);
+    border-radius: 0px 30px 0px 0px; 
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+.box2, .box3 {
+    width: 240px;
+    height: 160px;
+    background-image: linear-gradient(white, lightgrey);
+    border-radius: 0px 30px 0px 0px; 
+    border: 1px solid lightgrey;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.box3 {
+    margin-top: 20px;
+}
+
+.flex-form {
+    display: flex;
+}
+
+.col-form1 {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.col-form1 > label {
+   
+    font-size: small;
+    margin-bottom: 11px;
+    color: grey;
+}
+
+.col-form2 > input {
+    margin: 2px;
+}
+form > button {
+    background-color: #0C5176;
+    float: left;
+    margin-left: 70px;
+    cursor: pointer;
+    color: white;
+}
+
+form > button:hover {
+    color: black;
+    background-color: burlywood;
+}
+
+.coment {
+    margin-top: 5px;
+}
+
+.small-text {
+    font-size: small;
+    color: gray;
+}
+
+.main-row2 h4 {
+    color: #0C5176;
+}
+
+h5 {
+    margin: 0;
+    color: gray;
+}
+
+.box3 a:hover {
+    color: cornflowerblue;
+}
+
+.ul-flex {
+    background-color: #999999;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 0;
+   padding: 5px;
+}
+
+footer li a {
+    color: white;
+    font-size: small;
+    text-decoration: none;
+} 
+
+footer li::before {
+    content: "|";
+    color: lightgray;
+    padding-left: 11px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+} 
+
+
+
+
+
+
+
